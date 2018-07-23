@@ -1,0 +1,51 @@
+//Colors
+$wine:#6B2737;
+$onyx:#3A3042;
+$salmon:#f26a6d;
+$deepred:#550C18;
+$orange:#f48f72;
+$beige:#E0C1B3;
+$charcoal:#403F4C;
+$red:#da3849;
+$teal:#264653;
+$purple:#713E5A;
+$grey:#7A7D7D;
+$scarlet:#6A041D;
+
+#about-me-page {
+    background-image:linear-gradient(90deg, $orange 50%, $purple 50%);
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    height:100vh;
+
+
+    h2 {
+        margin:0;
+    }
+
+    .nav-item, #home-btn {
+        color:white;
+    }
+
+    #about-btn {
+        color:$onyx;
+    }
+
+    .left-side {
+        width:50vw;
+        font-size: 40px;
+        color: white;
+    }
+    
+    .about-text {
+        width:50vw;
+        font:14px "Open Sans";
+        color:white;
+        text-align: left;
+        padding:0 100px;
+        background-color: $purple;
+    }
+}

@@ -1,0 +1,31 @@
+import React, { Component } from "react";
+import ModalInner from "./ModalInner";
+
+class Modal extends Component {
+
+  state = {
+    isModalOpen: false
+  }
+
+  openModal = () => {
+    this.setState({isModalOpen: true})
+  }
+
+  closeModal = () => {
+    this.setState({isModalOpen: false})
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="nav-item" onClick={this.openModal}>Contact</div>
+        <ModalInner isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}
+          title={this.props.modalTitle} p1={this.props.modalInstructions1} p2={this.props.modalInstructions2} p3={this.props.modalInstructions3}>
+        </ModalInner>
+      </div>
+
+    )
+  }
+}
+
+export default Modal;

@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans");
+@import url("https://use.fontawesome.com/releases/v5.0.10/css/all.css");
+/* Global Styling =========================================================================== */
+* {
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  text-align: center; }
+
+a {
+  text-decoration: none; }
+
+.page {
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+#landing-page {
+  background: radial-gradient(#f3787b, #f26a6d);
+  padding: 20px 0; }
+
+.center-name h1 {
+  font-size: 12vmin;
+  text-transform: lowercase;
+  margin: 0 auto;
+  color: white; }
+
+.center-name p {
+  color: #550C18; }
+
+.navbar, .main-nav {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-size: 13px;
+  padding: 10px 10px 0 10px; }
+  .navbar .nav-item, .main-nav .nav-item {
+    padding: 0 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #550C18;
+    letter-spacing: .8px; }
+  .navbar #home-btn, .main-nav #home-btn {
+    color: #264653; }
+
+.logo {
+  width: 45px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none; }
+
+.footer i {
+  color: #264653;
+  padding: 0 10px;
+  font-size: 18px; }
+
+.port-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #E0C1B3;
+  justify-content: center;
+  background-image: url(https://i.imgur.com/wmCuoaE.png);
+  background-size: 20%;
+  background-origin: content-box; }
+  .port-container .portfolio-item {
+    flex: 1 1 300px;
+    min-height: 300px;
+    max-width: 450px;
+    cursor: pointer;
+    background: center/60% no-repeat; }
+    .port-container .portfolio-item .app-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      opacity: 0;
+      color: white; }
+      .port-container .portfolio-item .app-content .app-name {
+        font-size: 40px;
+        margin: 0;
+        text-transform: lowercase; }
+      .port-container .portfolio-item .app-content hr {
+        width: 30px;
+        border-radius: 10px;
+        border: 1px solid white;
+        margin: 10px auto; }
+      .port-container .portfolio-item .app-content .app-description {
+        padding: 0 70px;
+        font: 13px "Open Sans";
+        margin: 0; }
+  .port-container .portfolio-item:hover .app-content {
+    opacity: 1;
+    transition: .25s; }
+  .port-container #true-that {
+    background-color: #da3849;
+    background-image: url(https://i.imgur.com/Aa4LAZQ.png); }
+  .port-container #friend-finder {
+    background-color: #6A041D;
+    background-image: url(https://i.imgur.com/AmgeEmn.png); }
+  .port-container #spicy-burnz {
+    background-color: #713E5A;
+    background-image: url(https://i.imgur.com/S67uLkx.png); }
+  .port-container #library {
+    background-color: #f48f72;
+    background-image: url(https://i.imgur.com/EgseDF7.png); }
+  .port-container #node-liri {
+    background-color: #3A3042;
+    background-image: url(https://i.imgur.com/3S0FpeE.png); }
+  .port-container #trivia {
+    background-color: #f26a6d;
+    background-image: url(https://i.imgur.com/DjLEXxW.png); }
+  .port-container #shindig {
+    background-color: #6B2737;
+    background-image: url(https://i.imgur.com/RNIDz5M.png); }
+  .port-container #misc {
+    background-color: #550C18;
+    background-image: url(https://i.imgur.com/i32GWlj.png); }
+  .port-container #true-that:hover .app-content {
+    background-color: rgba(218, 56, 73, 0.95); }
+  .port-container #friend-finder:hover .app-content {
+    background-color: rgba(106, 4, 29, 0.95); }
+  .port-container #spicy-burnz:hover .app-content {
+    background-color: rgba(113, 62, 90, 0.95); }
+  .port-container #library:hover .app-content {
+    background-color: rgba(244, 143, 114, 0.95); }
+  .port-container #node-liri:hover .app-content {
+    background-color: rgba(58, 48, 66, 0.95); }
+  .port-container #trivia:hover .app-content {
+    background-color: rgba(242, 106, 109, 0.95); }
+  .port-container #shindig:hover .app-content {
+    background-color: rgba(107, 39, 55, 0.95); }
+  .port-container #misc:hover .app-content {
+    background-color: rgba(85, 12, 24, 0.95); }
+
+#about-me-page {
+  background-image: linear-gradient(90deg, #f48f72 50%, #713E5A 50%); }
+
+.about-container {
+  display: flex;
+  align-items: center;
+  height: 100vh; }
+  .about-container h2 {
+    margin: 0; }
+  .about-container .nav-item, .about-container #home-btn {
+    color: white; }
+  .about-container #about-btn {
+    color: #3A3042; }
+  .about-container .left-side {
+    width: 50vw;
+    font-size: 40px;
+    color: white; }
+  .about-container .about-text {
+    width: 50vw;
+    font: 14px "Open Sans";
+    color: white;
+    text-align: left;
+    padding: 0 100px;
+    background-color: #713E5A; }
+
+.modal-background {
+  background-color: rgba(242, 106, 109, 0.95); }
+
+.modal-style {
+  background-image: linear-gradient(-20deg, #f59a80 50%, #f48f72 50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 5px 5px 30px #6B2737; }
+  .modal-style .modal-btn {
+    color: #264653;
+    align-self: flex-end;
+    padding: 20px 20px 0 20px;
+    cursor: pointer; }
+  .modal-style .modal-title {
+    font-size: 35px;
+    text-transform: lowercase;
+    color: white;
+    padding: 30px 50px 10px 50px;
+    margin: 0; }
+  .modal-style .modal-p {
+    color: #264653;
+    font: 15px "Montserrat";
+    margin: 0;
+    padding: 5px; }
+  .modal-style #phone-num {
+    color: white;
+    font: 15px "Open Sans";
+    letter-spacing: .4px; }
+  .modal-style .footer {
+    padding: 50px 0 30px 0; }
+
+@media only screen and (max-width: 900px) {
+  .port-container {
+    background-size: 40%; }
+  #about-me-page {
+    background-image: none;
+    background: radial-gradient(#3b5864, #264653); }
+  .about-container {
+    flex-direction: column; }
+    .about-container .left-side {
+      width: 100vw; }
+      .about-container .left-side h2 {
+        margin: 50px 20px 20px 20px;
+        overflow: hidden;
+        font-size: 35px; }
+      .about-container .left-side h2:before, .about-container .left-side h2:after {
+        background-color: white;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 5%; }
+      .about-container .left-side h2:before {
+        right: 0.5em;
+        margin-left: -50%; }
+      .about-container .left-side h2:after {
+        left: 0.5em;
+        margin-right: -50%; }
+      .about-container .left-side .navbar {
+        display: none; }
+    .about-container .about-text {
+      width: 100vw;
+      text-align: center;
+      background: none; } }
+
+@media only screen and (max-width: 600px) {
+  .modal-style .modal-title {
+    font-size: 20px; }
+  .modal-style #phone-num {
+    font-size: 12px; }
+  #home-btn {
+    display: none; }
+  .logo {
+    position: static;
+    padding-top: 8px; }
+  .port-container {
+    background-color: #E0C1B3; }
+  .about-container .about-text {
+    padding: 5px 30px; } }

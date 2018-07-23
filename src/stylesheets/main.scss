@@ -1,0 +1,164 @@
+//Fonts ==================================================================
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans");
+@import url("https://use.fontawesome.com/releases/v5.0.10/css/all.css");
+
+//Colors
+$wine:#6B2737;
+$onyx:#3A3042;
+$salmon:#f26a6d;
+$deepred:#550C18;
+$orange:#f48f72;
+$beige:#E0C1B3;
+$charcoal:#403F4C;
+$red:#da3849;
+$teal:#264653;
+$purple:#713E5A;
+$grey:#7A7D7D;
+$scarlet:#6A041D;
+
+/* Global Styling =========================================================================== */
+* { 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    margin:0 auto;
+    font-family:"Montserrat", sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    min-height:100vh;
+    height: 100%;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#landing-page {
+    background:radial-gradient(#f3787b, $salmon);
+    padding: 20px 0;
+}
+
+.center-name {  
+    h1 {
+        font-size: 12vmin;
+        text-transform: lowercase;
+        margin:0 auto;
+        color:white;
+
+    }
+    p {
+        color:$deepred;
+    }
+}
+
+//Navbar  ==========================================================
+@import "../components/Nav/nav.scss";
+
+//Logo  ==========================================================
+@import "../components/Logo/logo.scss";
+
+//Footer  ==========================================================
+@import "../components/Footer/footer.scss";
+
+//Portfolio Items  ==========================================================
+@import "../components/PortfolioItems/portfolioItems.scss";
+
+//About Me  ==========================================================
+@import "../components/About/about.scss";
+
+//Modal ==========================================================
+@import "../components/Modal/modal.scss";
+
+//Screen Responsive
+@media only screen and (max-width: 900px) {
+
+    .port-container {
+        background-size: 40%;
+    }
+
+    #about-me-page {
+        background-image: none;
+        background: radial-gradient(#3b5864,$teal);
+    }
+
+    .about-container {
+        flex-direction: column;
+        
+        .left-side {
+            width:100vw;
+            
+            h2 {
+                margin: 50px 20px 20px 20px;
+                overflow: hidden;
+                font-size: 35px;
+            }
+
+            h2:before, h2:after {
+                background-color:white;
+                content: "";
+                display: inline-block;
+                height: 1px;
+                position: relative;
+                vertical-align: middle;
+                width: 5%;
+              }
+               
+            h2:before {
+                right: 0.5em;
+                margin-left: -50%;
+            }
+              
+            h2:after {
+                left: 0.5em;
+                margin-right: -50%;
+            }
+
+            .navbar {
+                display: none;
+            }
+        }
+        .about-text {
+            width:100vw;
+            text-align: center;
+            background: none;
+        }
+    }
+};
+
+@media only screen and (max-width: 600px) {
+
+    .modal-style {
+        .modal-title {
+            font-size:20px;
+        }
+        #phone-num{
+            font-size:12px;
+        }
+    }
+    #home-btn {
+        display: none;
+    }
+
+    .logo {
+        position: static;
+        padding-top:8px;
+    }
+
+    .port-container {
+        background-color: $beige;
+    }
+
+    .about-container{
+        .about-text {
+            padding:5px 30px;
+        }
+    }
+};

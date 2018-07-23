@@ -1,0 +1,32 @@
+.modal-background {
+  background-color: rgba(242, 106, 109, 0.95); }
+
+.modal-style {
+  background-image: linear-gradient(-20deg, #f59a80 50%, #f48f72 50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 5px 5px 30px #6B2737; }
+  .modal-style .modal-btn {
+    color: #264653;
+    align-self: flex-end;
+    padding: 20px 20px 0 20px;
+    cursor: pointer; }
+  .modal-style .modal-title {
+    font-size: 35px;
+    text-transform: lowercase;
+    color: white;
+    padding: 30px 50px 10px 50px;
+    margin: 0; }
+  .modal-style .modal-p {
+    color: #264653;
+    font: 15px "Montserrat";
+    margin: 0;
+    padding: 5px; }
+  .modal-style #phone-num {
+    color: white;
+    font: 15px "Open Sans";
+    letter-spacing: .4px; }
+  .modal-style .footer {
+    padding: 50px 0 30px 0; }

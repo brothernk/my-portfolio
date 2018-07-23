@@ -1,0 +1,78 @@
+.port-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #E0C1B3;
+  justify-content: center;
+  background-image: url(https://i.imgur.com/wmCuoaE.png);
+  background-size: 20%;
+  background-origin: content-box; }
+  .port-container .portfolio-item {
+    flex: 1 1 300px;
+    min-height: 300px;
+    max-width: 450px;
+    cursor: pointer;
+    background: center/60% no-repeat; }
+    .port-container .portfolio-item .app-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      opacity: 0;
+      color: white; }
+      .port-container .portfolio-item .app-content .app-name {
+        font-size: 40px;
+        margin: 0;
+        text-transform: lowercase; }
+      .port-container .portfolio-item .app-content hr {
+        width: 30px;
+        border-radius: 10px;
+        border: 1px solid white;
+        margin: 10px auto; }
+      .port-container .portfolio-item .app-content .app-description {
+        padding: 0 70px;
+        font: 13px "Open Sans";
+        margin: 0; }
+  .port-container .portfolio-item:hover .app-content {
+    opacity: 1;
+    transition: .25s; }
+  .port-container #true-that {
+    background-color: #da3849;
+    background-image: url(https://i.imgur.com/Aa4LAZQ.png); }
+  .port-container #friend-finder {
+    background-color: #6A041D;
+    background-image: url(https://i.imgur.com/AmgeEmn.png); }
+  .port-container #spicy-burnz {
+    background-color: #713E5A;
+    background-image: url(https://i.imgur.com/S67uLkx.png); }
+  .port-container #library {
+    background-color: #f48f72;
+    background-image: url(https://i.imgur.com/EgseDF7.png); }
+  .port-container #node-liri {
+    background-color: #3A3042;
+    background-image: url(https://i.imgur.com/3S0FpeE.png); }
+  .port-container #trivia {
+    background-color: #f26a6d;
+    background-image: url(https://i.imgur.com/DjLEXxW.png); }
+  .port-container #shindig {
+    background-color: #6B2737;
+    background-image: url(https://i.imgur.com/RNIDz5M.png); }
+  .port-container #misc {
+    background-color: #550C18;
+    background-image: url(https://i.imgur.com/i32GWlj.png); }
+  .port-container #true-that:hover .app-content {
+    background-color: rgba(218, 56, 73, 0.95); }
+  .port-container #friend-finder:hover .app-content {
+    background-color: rgba(106, 4, 29, 0.95); }
+  .port-container #spicy-burnz:hover .app-content {
+    background-color: rgba(113, 62, 90, 0.95); }
+  .port-container #library:hover .app-content {
+    background-color: rgba(244, 143, 114, 0.95); }
+  .port-container #node-liri:hover .app-content {
+    background-color: rgba(58, 48, 66, 0.95); }
+  .port-container #trivia:hover .app-content {
+    background-color: rgba(242, 106, 109, 0.95); }
+  .port-container #shindig:hover .app-content {
+    background-color: rgba(107, 39, 55, 0.95); }
+  .port-container #misc:hover .app-content {
+    background-color: rgba(85, 12, 24, 0.95); }

@@ -1,0 +1,59 @@
+//Colors
+$wine:#6B2737;
+$onyx:#3A3042;
+$salmon:#f26a6d;
+$deepred:#550C18;
+$orange:#f48f72;
+$beige:#E0C1B3;
+$charcoal:#403F4C;
+$red:#da3849;
+$teal:#264653;
+$purple:#713E5A;
+$grey:#7A7D7D;
+$scarlet:#6A041D;
+
+//Modal Styling =======================================================
+.modal-background {
+    background-color:rgba(242, 106, 109, .95);
+}
+
+.modal-style {
+  background-image:linear-gradient(-20deg, #f59a80 50%, $orange 50%);
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 5px 5px 30px $wine;
+
+    .modal-btn {
+        color:$teal;
+        align-self: flex-end;
+        padding:20px 20px 0 20px;
+        cursor: pointer;
+    }
+
+    .modal-title {
+        font-size: 35px;
+        text-transform: lowercase;
+        color:white;
+        padding:30px 50px 10px 50px;
+        margin:0;
+    }
+
+    .modal-p {
+        color:$teal;
+        font:15px "Montserrat";
+        margin:0;
+        padding:5px;
+    }
+
+    #phone-num{
+        color:white;
+        font:15px "Open Sans";
+        letter-spacing: .4px;
+    }
+
+    .footer{
+        padding:50px 0 30px 0;
+    }
+}
