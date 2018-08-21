@@ -9,8 +9,15 @@
     margin: 0; }
   .about-container .nav-item, .about-container #home-btn {
     color: white; }
+  .about-container #home-btn:hover {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid white; }
   .about-container #about-btn {
     color: #3A3042; }
+  .about-container #about-btn:hover {
+    border-bottom: 2px solid #3A3042; }
+  .about-container .nav-item:hover {
+    border-top: 2px solid transparent; }
   .about-container .left-side {
     width: 50vw;
     font-size: 40px;

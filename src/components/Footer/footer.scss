@@ -17,3 +17,10 @@ $scarlet:#6A041D;
     padding:0 10px;
     font-size:18px;
 }
+
+.footer i:hover{
+    color:white;
+    padding:0 10px;
+    transform: scale(1.3);
+    transition: .15s;
+}

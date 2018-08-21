@@ -21,14 +21,29 @@ $scarlet:#6A041D;
     padding:10px 10px 0 10px;
 
     .nav-item {
-        padding:0 15px;
+        padding:8px 2px;
+        margin:-8px 15px;
         text-transform: uppercase;
         cursor: pointer;
         color:$deepred;
         letter-spacing: .8px;
+        border-bottom:2px solid transparent;
+        border-top:2px solid transparent;
+    }
+
+    .nav-item:hover {
+        border-bottom:2px solid white;
+        border-top:2px solid white;
+        color:white;
+        transition:.25s;
     }
 
     #home-btn {
         color:$teal;
+    }
+
+    #home-btn:hover {
+        border-top:2px solid $teal;
+        border-bottom:2px solid $teal;
     }
 }

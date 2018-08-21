@@ -10,11 +10,11 @@ const PortfolioItems = () => (
             </div>
         </a></div>
 
-        <div className="portfolio-item" id="friend-finder"><a href="https://friendfinder-kab.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+        <div className="portfolio-item" id="library"> <a href="https://personallibrary-kab.herokuapp.com/" target="_blank" rel="noopener noreferrer">
             <div className="app-content">
-                <p className="app-name">Friend Finder</p>
+                <p className="app-name">Library App</p>
                 <hr></hr>
-                <p className="app-description">Take a quiz to find your perfect friend</p>
+                <p className="app-description">Keep track of books you've read and want to read</p>
             </div>
         </a></div>
             
@@ -26,11 +26,11 @@ const PortfolioItems = () => (
             </div>
         </a></div>
 
-        <div className="portfolio-item" id="library"> <a href="https://personallibrary-kab.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+        <div className="portfolio-item" id="friend-finder"><a href="https://friendfinder-kab.herokuapp.com/" target="_blank" rel="noopener noreferrer">
             <div className="app-content">
-                <p className="app-name">Library App</p>
+                <p className="app-name">Friend Finder</p>
                 <hr></hr>
-                <p className="app-description">Keep track of books you've read and want to read</p>
+                <p className="app-description">Take a quiz to find your perfect friend</p>
             </div>
         </a></div>
 
@@ -60,7 +60,7 @@ const PortfolioItems = () => (
 
         <div className="portfolio-item" id="misc"><a href="" target="_blank" rel="noopener noreferrer">
             <div className="app-content">
-                <p className="app-name">Miscellaneous</p>
+                <p className="app-name">Design</p>
                 <hr></hr>
                 <p className="app-description">Illustrations and design projects I've created</p>
             </div>

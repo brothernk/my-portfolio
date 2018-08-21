@@ -42,13 +42,24 @@ a {
   font-size: 13px;
   padding: 10px 10px 0 10px; }
   .navbar .nav-item, .main-nav .nav-item {
-    padding: 0 15px;
+    padding: 8px 2px;
+    margin: -8px 15px;
     text-transform: uppercase;
     cursor: pointer;
     color: #550C18;
-    letter-spacing: .8px; }
+    letter-spacing: .8px;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent; }
+  .navbar .nav-item:hover, .main-nav .nav-item:hover {
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    color: white;
+    transition: .25s; }
   .navbar #home-btn, .main-nav #home-btn {
     color: #264653; }
+  .navbar #home-btn:hover, .main-nav #home-btn:hover {
+    border-top: 2px solid #264653;
+    border-bottom: 2px solid #264653; }
 
 .logo {
   width: 45px;
@@ -61,6 +72,12 @@ a {
   color: #264653;
   padding: 0 10px;
   font-size: 18px; }
+
+.footer i:hover {
+  color: white;
+  padding: 0 10px;
+  transform: scale(1.3);
+  transition: .15s; }
 
 .port-container {
   display: flex;
@@ -104,13 +121,13 @@ a {
     background-color: #da3849;
     background-image: url(https://i.imgur.com/Aa4LAZQ.png); }
   .port-container #friend-finder {
-    background-color: #6A041D;
+    background-color: #f48f72;
     background-image: url(https://i.imgur.com/AmgeEmn.png); }
   .port-container #spicy-burnz {
     background-color: #713E5A;
     background-image: url(https://i.imgur.com/S67uLkx.png); }
   .port-container #library {
-    background-color: #f48f72;
+    background-color: #6A041D;
     background-image: url(https://i.imgur.com/EgseDF7.png); }
   .port-container #node-liri {
     background-color: #3A3042;
@@ -127,11 +144,11 @@ a {
   .port-container #true-that:hover .app-content {
     background-color: rgba(218, 56, 73, 0.95); }
   .port-container #friend-finder:hover .app-content {
-    background-color: rgba(106, 4, 29, 0.95); }
+    background-color: rgba(244, 143, 114, 0.95); }
   .port-container #spicy-burnz:hover .app-content {
     background-color: rgba(113, 62, 90, 0.95); }
   .port-container #library:hover .app-content {
-    background-color: rgba(244, 143, 114, 0.95); }
+    background-color: rgba(106, 4, 29, 0.95); }
   .port-container #node-liri:hover .app-content {
     background-color: rgba(58, 48, 66, 0.95); }
   .port-container #trivia:hover .app-content {
@@ -152,8 +169,15 @@ a {
     margin: 0; }
   .about-container .nav-item, .about-container #home-btn {
     color: white; }
+  .about-container #home-btn:hover {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid white; }
   .about-container #about-btn {
     color: #3A3042; }
+  .about-container #about-btn:hover {
+    border-bottom: 2px solid #3A3042; }
+  .about-container .nav-item:hover {
+    border-top: 2px solid transparent; }
   .about-container .left-side {
     width: 50vw;
     font-size: 40px;

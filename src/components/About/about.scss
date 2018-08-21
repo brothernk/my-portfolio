@@ -30,8 +30,21 @@ $scarlet:#6A041D;
         color:white;
     }
 
+    #home-btn:hover {
+        border-top:2px solid transparent;
+        border-bottom:2px solid white;
+    }
+
     #about-btn {
         color:$onyx;
+    }
+
+    #about-btn:hover {
+        border-bottom:2px solid $onyx;
+    }
+
+    .nav-item:hover {
+        border-top:2px solid transparent;
     }
 
     .left-side {

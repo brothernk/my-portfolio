@@ -40,13 +40,13 @@
     background-color: #da3849;
     background-image: url(https://i.imgur.com/Aa4LAZQ.png); }
   .port-container #friend-finder {
-    background-color: #6A041D;
+    background-color: #f48f72;
     background-image: url(https://i.imgur.com/AmgeEmn.png); }
   .port-container #spicy-burnz {
     background-color: #713E5A;
     background-image: url(https://i.imgur.com/S67uLkx.png); }
   .port-container #library {
-    background-color: #f48f72;
+    background-color: #6A041D;
     background-image: url(https://i.imgur.com/EgseDF7.png); }
   .port-container #node-liri {
     background-color: #3A3042;
@@ -63,11 +63,11 @@
   .port-container #true-that:hover .app-content {
     background-color: rgba(218, 56, 73, 0.95); }
   .port-container #friend-finder:hover .app-content {
-    background-color: rgba(106, 4, 29, 0.95); }
+    background-color: rgba(244, 143, 114, 0.95); }
   .port-container #spicy-burnz:hover .app-content {
     background-color: rgba(113, 62, 90, 0.95); }
   .port-container #library:hover .app-content {
-    background-color: rgba(244, 143, 114, 0.95); }
+    background-color: rgba(106, 4, 29, 0.95); }
   .port-container #node-liri:hover .app-content {
     background-color: rgba(58, 48, 66, 0.95); }
   .port-container #trivia:hover .app-content {

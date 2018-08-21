@@ -6,11 +6,10 @@ import PortfolioItems from "../../components/PortfolioItems/PortfolioItems";
 import About from "../../components/About/About";
 
 class Home extends Component {
-
+  
   render() {
     return (
       <div>
-
         <div className="page" id="landing-page">
           <Nav></Nav>
           <Name></Name>
@@ -25,7 +24,6 @@ class Home extends Component {
           <About></About>
         </div>
       </div>
-
     );
   }
 }

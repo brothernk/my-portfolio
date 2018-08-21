@@ -6,10 +6,21 @@
   font-size: 13px;
   padding: 10px 10px 0 10px; }
   .navbar .nav-item, .main-nav .nav-item {
-    padding: 0 15px;
+    padding: 8px 2px;
+    margin: -8px 15px;
     text-transform: uppercase;
     cursor: pointer;
     color: #550C18;
-    letter-spacing: .8px; }
+    letter-spacing: .8px;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent; }
+  .navbar .nav-item:hover, .main-nav .nav-item:hover {
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    color: white;
+    transition: .25s; }
   .navbar #home-btn, .main-nav #home-btn {
     color: #264653; }
+  .navbar #home-btn:hover, .main-nav #home-btn:hover {
+    border-top: 2px solid #264653;
+    border-bottom: 2px solid #264653; }
