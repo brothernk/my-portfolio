@@ -26,6 +26,7 @@ body {
     margin:0 auto;
     font-family:"Montserrat", sans-serif;
     text-align: center;
+    background-color: $red;
 }
 
 a {
@@ -45,25 +46,6 @@ a {
     background:radial-gradient(#f3787b, $salmon);
     padding: 20px 0;
 }
-
-// #landing-page {
-//     padding:20px 0;
-// 	background: linear-gradient(45deg, $salmon, $orange, $red, $purple);
-// 	background-size: 400% 400%;
-// 	animation: Gradient 15s ease infinite;
-// }
-
-// @keyframes Gradient {
-// 	0% {
-// 		background-position: 0% 50%
-// 	}
-// 	50% {
-// 		background-position: 100% 50%
-// 	}
-// 	100% {
-// 		background-position: 0% 50%
-// 	}
-// }
 
 .center-name {  
     h1 {
@@ -98,6 +80,10 @@ a {
 
 //Screen Responsive
 @media only screen and (max-width: 900px) {
+    
+    body{
+        background-color: $orange;
+    }
 
     .port-container {
         background-size: 40%;
@@ -144,16 +130,44 @@ a {
                 display: none;
             }
         }
+
+        #about-btn {
+            color:$orange;   
+        }
+
         .about-text {
             width:100vw;
             text-align: center;
             background: none;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between !important;
+            height: 100vh;
+
+            .mobile-nav{
+                display: flex;
+                padding:30px;
+
+                .nav-item:hover {
+                    border-bottom:2px solid white;
+                    border-top:2px solid white;
+                }
+                #about-btn:hover {
+                    border-bottom:2px solid $orange;
+                    border-top:2px solid $orange;     
+                }
+                #home-btn:hover{
+                    border-top:2px solid white;
+                }
+            }
         }
     }
 };
 
 @media only screen and (max-width: 600px) {
-
+    #landing-page {
+        padding-bottom: 100px;
+    }
     .modal-style {
         .modal-title {
             font-size:20px;
@@ -162,7 +176,8 @@ a {
             font-size:12px;
         }
     }
-    #home-btn {
+    
+    #landing-page #home-btn {
         display: none;
     }
 
@@ -170,11 +185,23 @@ a {
         position: static;
         padding-top:8px;
     }
-
-    .port-container {
-        background-color: $beige;
+    .port-container{
+        .portfolio-item{
+            .app-content{
+                opacity: 1;
+            }
+        }
     }
 
+    #true-that .app-content{background-color:rgba(218, 56, 73,.95);}
+    #friend-finder .app-content{ background-color:rgba(244, 143, 114, .95);}
+    #spicy-burnz .app-content{ background-color:rgba(113, 62, 90, .95);}
+    #library .app-content{ background-color:rgba(106, 4, 29, .95);}
+    #node-liri .app-content{ background-color:rgba(58, 48, 66, .95);}
+    #trivia .app-content{ background-color:rgba(242, 106, 109, .95);}           
+    #shindig .app-content{ background-color: rgba(107, 39, 55, .95);}
+    #misc .app-content{ background-color:rgba(85, 12, 24, .95);}
+    
     .about-container{
         .about-text {
             padding:5px 30px;

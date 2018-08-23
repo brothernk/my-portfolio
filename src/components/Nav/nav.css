@@ -24,3 +24,6 @@
   .navbar #home-btn:hover, .main-nav #home-btn:hover {
     border-top: 2px solid #264653;
     border-bottom: 2px solid #264653; }
+
+.mobile-nav {
+  display: none; }

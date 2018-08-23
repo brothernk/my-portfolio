@@ -8,7 +8,8 @@
 body {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
-  text-align: center; }
+  text-align: center;
+  background-color: #da3849; }
 
 a {
   text-decoration: none; }
@@ -60,6 +61,9 @@ a {
   .navbar #home-btn:hover, .main-nav #home-btn:hover {
     border-top: 2px solid #264653;
     border-bottom: 2px solid #264653; }
+
+.mobile-nav {
+  display: none; }
 
 .logo {
   width: 45px;
@@ -224,6 +228,8 @@ a {
     padding: 50px 0 30px 0; }
 
 @media only screen and (max-width: 900px) {
+  body {
+    background-color: #f48f72; }
   .port-container {
     background-size: 40%; }
   #about-me-page {
@@ -253,22 +259,57 @@ a {
         margin-right: -50%; }
       .about-container .left-side .navbar {
         display: none; }
+    .about-container #about-btn {
+      color: #f48f72; }
     .about-container .about-text {
       width: 100vw;
       text-align: center;
-      background: none; } }
+      background: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between !important;
+      height: 100vh; }
+      .about-container .about-text .mobile-nav {
+        display: flex;
+        padding: 30px; }
+        .about-container .about-text .mobile-nav .nav-item:hover {
+          border-bottom: 2px solid white;
+          border-top: 2px solid white; }
+        .about-container .about-text .mobile-nav #about-btn:hover {
+          border-bottom: 2px solid #f48f72;
+          border-top: 2px solid #f48f72; }
+        .about-container .about-text .mobile-nav #home-btn:hover {
+          border-top: 2px solid white; } }
 
 @media only screen and (max-width: 600px) {
+  #landing-page {
+    padding-bottom: 100px; }
   .modal-style .modal-title {
     font-size: 20px; }
   .modal-style #phone-num {
     font-size: 12px; }
-  #home-btn {
+  #landing-page #home-btn {
     display: none; }
   .logo {
     position: static;
     padding-top: 8px; }
-  .port-container {
-    background-color: #E0C1B3; }
+  .port-container .portfolio-item .app-content {
+    opacity: 1; }
+  #true-that .app-content {
+    background-color: rgba(218, 56, 73, 0.95); }
+  #friend-finder .app-content {
+    background-color: rgba(244, 143, 114, 0.95); }
+  #spicy-burnz .app-content {
+    background-color: rgba(113, 62, 90, 0.95); }
+  #library .app-content {
+    background-color: rgba(106, 4, 29, 0.95); }
+  #node-liri .app-content {
+    background-color: rgba(58, 48, 66, 0.95); }
+  #trivia .app-content {
+    background-color: rgba(242, 106, 109, 0.95); }
+  #shindig .app-content {
+    background-color: rgba(107, 39, 55, 0.95); }
+  #misc .app-content {
+    background-color: rgba(85, 12, 24, 0.95); }
   .about-container .about-text {
     padding: 5px 30px; } }
