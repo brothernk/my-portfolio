@@ -268,10 +268,15 @@ a {
       display: flex;
       flex-direction: column;
       justify-content: space-between !important;
-      height: 100vh; }
+      height: 100%; }
       .about-container .about-text .mobile-nav {
         display: flex;
         padding: 30px; }
+        .about-container .about-text .mobile-nav .nav-item {
+          letter-spacing: .8px;
+          font-weight: bold;
+          margin: -8px 0px;
+          padding: 8px 15px; }
         .about-container .about-text .mobile-nav .nav-item:hover {
           border-bottom: 2px solid white;
           border-top: 2px solid white; }
@@ -295,6 +300,10 @@ a {
     padding-top: 8px; }
   .port-container .portfolio-item .app-content {
     opacity: 1; }
+    .port-container .portfolio-item .app-content hr {
+      margin: 12px auto; }
+    .port-container .portfolio-item .app-content .app-description {
+      font-size: 15px; }
   #true-that .app-content {
     background-color: rgba(218, 56, 73, 0.95); }
   #friend-finder .app-content {

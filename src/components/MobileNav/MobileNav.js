@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../../components/Logo/Logo";
 import Modal from "../../components/Modal/Modal";
 
 const MobileNav = () => (

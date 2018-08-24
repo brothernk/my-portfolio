@@ -142,16 +142,26 @@ a {
             display:flex;
             flex-direction: column;
             justify-content: space-between !important;
-            height: 100vh;
+            height: 100%;
 
             .mobile-nav{
                 display: flex;
                 padding:30px;
 
+                .nav-item{
+                    letter-spacing: .8px;
+                    font-weight: bold;
+                    margin:-8px 0px;
+                    padding:8px 15px;
+                }
+
                 .nav-item:hover {
                     border-bottom:2px solid white;
                     border-top:2px solid white;
                 }
+                // #about-btn{
+                //     display: none;
+                // }
                 #about-btn:hover {
                     border-bottom:2px solid $orange;
                     border-top:2px solid $orange;     
@@ -189,6 +199,12 @@ a {
         .portfolio-item{
             .app-content{
                 opacity: 1;
+                hr {
+                    margin:12px auto;
+                }
+                .app-description{
+                    font-size:15px;
+                }
             }
         }
     }
