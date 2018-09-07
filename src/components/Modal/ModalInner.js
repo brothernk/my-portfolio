@@ -29,7 +29,7 @@ class ModalInner extends Component {
                         <div className="modal-style" style={this.state.modal}>
                             <div className="modal-btn" onClick={this.props.onClose}><i className="fas fa-times"></i></div>
                             <div className="modal-text">
-                                <p className="modal-p">let's get coffee...</p>
+                                <p className="modal-p">let's get coffee</p>
                                 <h1 className="modal-title">brothernk21@gmail.com</h1>
                                 <p className="modal-p" id="phone-num">(651) 491-8829</p>
                             </div>

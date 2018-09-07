@@ -58,7 +58,7 @@ const PortfolioItems = () => (
             </div>
         </a></div>
 
-        <div className="portfolio-item" id="misc"><a href="" target="_blank" rel="noopener noreferrer">
+        <div className="portfolio-item" id="misc"><a href="https://brothernk.github.io/design_projects/." target="_blank" rel="noopener noreferrer">
             <div className="app-content">
                 <p className="app-name">Design</p>
                 <hr></hr>
