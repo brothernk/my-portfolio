@@ -18,7 +18,7 @@ const About = () => (
                     vibrant design. 
                 </p>
                 <p>
-                    I have experience in both front-end and back-end applciations, and I am fully comfortable with the MERN stack, HTML, CSS & Sass, JavaScript & jQuery,
+                    I have experience in both front-end and back-end applications, and I am fully comfortable with the MERN stack, HTML, CSS & Sass, JavaScript & jQuery,
                     and MySQL. I have a growing knowledge in PHP, Java, and Python, and continue to learn more every day. 
                 </p>
                 <p>
